@@ -2,114 +2,149 @@
 -------------------------------------------------- */
 
 @font-face {
-  font-family: "futura-book";
-  src: url("../fonts/futura-book.ttf") format("truetype");
+    font-family: "futura-book";
+    src: url("../fonts/futura-book.ttf") format("truetype");
 }
+
 @font-face {
-  font-family: "FutuBd";
-  src: url("../fonts/FutuBd.ttf") format("truetype");
+    font-family: "FutuBd";
+    src: url("../fonts/FutuBd.ttf") format("truetype");
 }
+
 @font-face {
-  font-family: "FutuBdIt";
-  src: url("../fonts/FutuBdIt.ttf") format("truetype");
+    font-family: "FutuBdIt";
+    src: url("../fonts/FutuBdIt.ttf") format("truetype");
 }
+
 @font-face {
-  font-family: "FutuMd";
-  src: url("../fonts/FutuMd.ttf") format("truetype");
+    font-family: "FutuMd";
+    src: url("../fonts/FutuMd.ttf") format("truetype");
 }
+
 @font-face {
-  font-family: "FutuMdIt";
-  src: url("../fonts/FutuMdIt.ttf") format("truetype");
+    font-family: "FutuMdIt";
+    src: url("../fonts/FutuMdIt.ttf") format("truetype");
 }
+
 @font-face {
-  font-family: "FUTURAB";
-  src: url("../fonts/FUTURAB.TTF") format("truetype");
+    font-family: "FUTURAB";
+    src: url("../fonts/FUTURAB.TTF") format("truetype");
 }
+
 @font-face {
-  font-family: "FuturaBoldBT";
-  src: url("../fonts/FuturaBoldBT.ttf") format("truetype");
+    font-family: "FuturaBoldBT";
+    src: url("../fonts/FuturaBoldBT.ttf") format("truetype");
 }
+
 @font-face {
-  font-family: "FuturaBoldItalicBT";
-  src: url("../fonts/FuturaBoldItalicBT.ttf") format("truetype");
+    font-family: "FuturaBoldItalicBT";
+    src: url("../fonts/FuturaBoldItalicBT.ttf") format("truetype");
 }
+
 @font-face {
-  font-family: "FuturaMediumBT";
-  src: url("../fonts/FuturaMediumBT.ttf") format("truetype");
+    font-family: "FuturaMediumBT";
+    src: url("../fonts/FuturaMediumBT.ttf") format("truetype");
 }
+
 @font-face {
-  font-family: "FuturaMediumItalicBT";
-  src: url("../fonts/FuturaMediumItalicBT.ttf") format("truetype");
+    font-family: "FuturaMediumItalicBT";
+    src: url("../fonts/FuturaMediumItalicBT.ttf") format("truetype");
 }
+
 
 /* * {
   font-family: "Futura Std Book", "Futura Book", "Futura Round", "Futura Std Book",
     "Futura Std Heavy", "Futura Thin";
 } */
+
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 
+
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  color: #5a5a5a;
-  font-family: "futura-book ,FutuBd ,FutuBdIt ,FutuMd ,FutuMdIt ,FUTURAB ,FuturaBoldBT ,FuturaBoldItalicBT ,FuturaMediumBT ,FuturaMediumItalicBT";
- 
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #5a5a5a;
+    font-family: "futura-book ,FutuBd ,FutuBdIt ,FutuMd ,FutuMdIt ,FUTURAB ,FuturaBoldBT ,FuturaBoldItalicBT ,FuturaMediumBT ,FuturaMediumItalicBT";
 }
-h1,h2,h3,h4,h5,h6,a,button{
-  font-family: "FuturaBoldBT";
-  /* font-weight: 700; */
+
+h1,h2,h3,h4,h5,h6,a,button {
+    font-family: "FuturaBoldBT";
+    /* font-weight: 700; */
 }
-p,li{
-  font-family: "FutuMd";
-  /* font-weight: 700; */
+
+p,li,select,input {
+    font-family: "FutuMd";
+    /* font-weight: 700; */
 }
+.form-check-label{
+    font-family: "FutuMd";
+
+}
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
+
 /* Carousel base class */
+
 .carousel {
-  margin-bottom: 4rem;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
+    margin-bottom: 4rem;
 }
 
-/* Declare heights because of positioning of img element */
-.carousel-item {
-  height: 32rem;
+
+/* Since positioning the image, we need to help out the caption */
+
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
 }
-.carousel-item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 32rem;
+
+
+/* Declare heights because of positioning of img element */
+
+.carousel-item {
+    height: 32rem;
+}
+
+.carousel-item>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
 }
 
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
+
 /* Center align the text within the three columns below the carousel */
+
 .marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
-  text-align: center;
+    margin-bottom: 1.5rem;
+    text-align: center;
 }
+
 .marketing h2 {
-  font-weight: 400;
+    font-weight: 400;
 }
+
+
 /* rtl:begin:ignore */
+
 .marketing .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
+    margin-right: .75rem;
+    margin-left: .75rem;
 }
+
+
 /* rtl:end:ignore */
 
 
@@ -117,15 +152,18 @@ p,li{
 ------------------------- */
 
 .featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+    margin: 5rem 0;
+    /* Space out the Bootstrap <hr> more */
 }
 
+
 /* Thin out the marketing headings */
+
 .featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  /* rtl:remove */
-  letter-spacing: -.05rem;
+    font-weight: 300;
+    line-height: 1;
+    /* rtl:remove */
+    letter-spacing: -.05rem;
 }
 
 
@@ -133,101 +171,108 @@ p,li{
 -------------------------------------------------- */
 
 @media (min-width: 40em) {
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
-  }
-
-  .featurette-heading {
-    font-size: 50px;
-  }
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+    .featurette-heading {
+        font-size: 50px;
+    }
 }
 
 @media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
-  }
+    .featurette-heading {
+        margin-top: 7rem;
+    }
 }
 
+
 /* my custom stlying below */
+
 .bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
 }
 
 @media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
 }
 
 .actionbutton {
-  width: 350px;
-  height: 60px;
-  text-align: center;
-  background: #01934A;
-  border-color: #01934A;
-  border-radius: 10px;
-  margin: 20px 20px 0;
+    width: 350px;
+    height: 60px;
+    text-align: center;
+    background: #01934A;
+    border-color: #01934A;
+    border-radius: 10px;
+    margin: 20px 20px 0;
+}
 
+.carousel-caption>h1 {
+    font-size: 500%;
 }
-.carousel-caption > h1{
-  font-size: 500%;
-}
+
 .sliderbutton {
-  width: 250px;
-  height: 50px;
-  text-align: center;
-  background: #01934A;
-  border-color: #01934A;
-  border-radius: 10px;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    background: #01934A;
+    border-color: #01934A;
+    border-radius: 10px;
+}
 
-}
 #actionsection {
-  padding: 100px 0px 30px 0px;
-  background-color: #f4f4f4 !important;
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
+    padding: 100px 0px 30px 0px;
+    background-color: #f4f4f4 !important;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
+
 #innernav {
-  padding: 10px 0px 10px 0px;
-  background-color: #003569 !important;
-  width: 100%;
+    padding: 10px 0px 10px 0px;
+    background-color: #003569 !important;
+    width: 100%;
 }
+
 .bg-light {
-  background-color: white !important;
+    background-color: white !important;
 }
 
 .navbar-brand {
-  width: 80px;
-  height: auto;
+    width: 80px;
+    height: auto;
 }
 
 .balancebutton {
-  width: 40%;
-  height: 60px;
-  margin: 20px;
-  border-color: #003569;
-  background: #003569;
-  border-radius: 60px;
-}
-/* .bannersection{
-  background-image: url('../images/banner.png');
-  height: 400px;
-} */
-@media only screen and (max-width: 600px) {
-  .balancebutton {
-    width: 60%;
-    height: 50px;
+    width: 40%;
+    height: 60px;
     margin: 20px;
     border-color: #003569;
     background: #003569;
     border-radius: 60px;
-  }
+}
+
+
+/* .bannersection{
+  background-image: url('../images/banner.png');
+  height: 400px;
+} */
+
+@media only screen and (max-width: 600px) {
+    .balancebutton {
+        width: 60%;
+        height: 50px;
+        margin: 20px;
+        border-color: #003569;
+        background: #003569;
+        border-radius: 60px;
+    }
 }
