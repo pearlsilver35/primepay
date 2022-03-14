@@ -1,0 +1,237 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and PrimePay contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>PrimePay v1.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+
+
+    <!-- PrimePay core CSS -->
+    <link href="assets/bootstrap-5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 0px !important;
+        }
+
+        .form-control.form-check {
+            padding-left: 50px;
+            margin: 9px 0px;
+        }
+
+        .container {
+            align-items: center;
+            display: flex;
+            width: 80%;
+            padding: auto;
+            margin: 5%;
+        }
+
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .form-control {
+            background-color: #7aa7c810;
+            border: 1px solid #7aa7c842;
+            box-sizing: border-box;
+            border-radius: 0px;
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <main>
+        <!-- Three columns of text below the carousel -->
+        <div id="bannersection" class="bannersection">
+            <img width="100%" height="400px" src="assets/images/banner.png" alt="">
+
+        </div>
+
+
+        <div style="margin: 80px 10px;" class="container">
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+                <div class="col-lg-12">
+
+
+                    <h2 style="color: #003569; text-align: center;">Application Form</h2>
+                    <p style="color:#6193C5; text-align: center;">You can buy any products and pay at a later date</p>
+                    <p>
+                    <ul>
+                        <li>Maximum Loan amount - N100,000</li>
+                        <li>Maximum Tenor - 3 months </li>
+                        <li>Disbursement time - Instant</li>
+                    </ul>
+                    <p style="font-weight: bold;"> For this application, you will need</p>
+                    <ol>
+                        <li>Your IPPIS Number</li>
+                        <li> Your salary account number (where your salary is paid)</li>
+                        <li>To read, understand and accept the loan terms and conditions</li>
+                    </ol>
+                    </p>
+                </div>
+                <!-- /.col-lg-4 -->
+            </div>
+            <!-- /.row -->
+
+
+        </div>
+        <!-- /.container -->
+        <div id="innernav" class="row">
+            <div class="col-md-1"><img src="assets/images/logo-dark.png" alt="PrimePay-logo" class="navbar-brand">
+            </div>
+            <div style="
+      justify-content: center;
+      display: flex;
+      align-items: center;
+  " class="col-md-10">
+                <p style="color:#FFFFFF; font-family: FuturaBoldBT;">Welcome to PrimePay Lending Service</p>
+            </div>
+
+        </div>
+
+        <div class="container row">
+            <div class="col-lg-12">
+
+                <label class="form-check-label" for="">
+                    <h6>Choose Merchant</h6>
+                </label>
+                <select class="form-select form-control" id="choosemerchant" required>
+                    <option value=" ">Choose your merchant</option>
+                    <option>Jumia</option>
+                    <option>Konga</option>
+                    <option>Amazon</option>
+
+                </select>
+            </div>
+
+            <div class="col-lg-12">
+
+                <form class="needs-validation" novalidate>
+                    <div class="row g-3"><label for="mobilenumber" class="form-label">
+                            <h6>Mobile Number</h6>
+                        </label>
+                        <div class="col-sm-1">
+
+                            <input type="tel" class="form-control" id="mobilenumber" placeholder="" value="+234"
+                                required disabled>
+                            <div class="invalid-feedback">
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-5">
+                            <input type="number" minlenght="10" maxlength="10" class="form-control" id="lastName"
+                                placeholder="Enter your Mobile Number" value="" required>
+                            <div class="invalid-feedback">
+                                Valid Phone Number is required.
+                            </div>
+                        </div>
+                        <div>
+
+                            <div class="col-lg-4">
+                                <label for="ippisnumber" class="form-label ">
+                                    <h6>IPPIS Number</h6>
+                                </label>
+                                <input type="number " class="form-control " id="ippisnumber"
+                                    placeholder="Enter your IPPIS number" required>
+                                <div class="invalid-feedback ">
+                                    Please enter a valid IPPIS Number.
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-5">
+                            <label for="loanamount" class="form-label ">
+                                <h6>Eligible Loan Amount</h6>
+                            </label>
+                            <select class="form-select form-control" id="loanamount" required>
+                                <option value=" ">Select eligible loan amount</option>
+                                <option>N30,000</option>
+                                <option>N60,000</option>
+                                <option>N100,000</option>
+                            </select>
+                            <div class="invalid-feedback ">
+                            
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label for="monthlypayment" class="form-label ">
+                                <h6>Repayment Per Tenor</h6>
+                            </label>
+                            <input type="text" class="form-control " id="monthlypayment " placeholder=" "
+                                value="N33,000 per month for 3 months" disabled>
+                            <div class="invalid-feedback ">
+
+                            </div>
+                        </div>
+                        
+
+                        <div class="col-md-12 ">
+                            <label for="accountnumber" class="form-label ">
+                                <h6>Account Number</h6>
+                            </label>
+                            <input type="number " class="form-control " id="accountnumber"
+                                placeholder="Enter your salary account number where we will disburse your loan"
+                                required>
+                            <div class="invalid-feedback ">
+                                Please enter a valid Account Number.
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <label for="bankname " class="form-label ">
+                                <h6>Bank Name</h6>
+                            </label>
+                            <select class="form-select form-control" id="bankname " required>
+                                <option value=" ">Select bank name</option>
+                                <option>Zenith Bank</option>
+                                <option>Access Bank</option>
+                            </select>
+                            <div class="invalid-feedback ">
+                                Please select a valid bankname.
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr class="my-4 ">
+                    <button style="color: #FFFFFF;" class=" w-100 btn actionbutton btn-lg " type="submit ">Continue</button>
+                </form>
+            </div>
+        </div>
+        <!-- FOOTER -->
+        <footer style="margin-top: 100px; " class="container ">
+            <!-- <p class="float-end "><a href="# ">Back to top</a></p> -->
+            <!-- <p>&copy; 2022 Company, Inc. &middot; <a href="# ">Privacy</a> &middot; <a href="# ">Terms</a></p> -->
+        </footer>
+    </main>
+
+
+    <script src="assets/bootstrap-5.0.2/dist/js/bootstrap.bundle.min.js "></script>
+    <script src="assets/js/form-validation.js "></script>
+</body>
+
+</html>
