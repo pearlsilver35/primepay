@@ -19,12 +19,12 @@
         body {
             padding-top: 0px !important;
         }
-        
+
         .form-control.form-check {
             padding-left: 50px;
             margin: 9px 0px;
         }
-        
+
         .container {
             align-items: center;
             display: flex;
@@ -32,7 +32,7 @@
             padding: auto;
             margin: 5%;
         }
-        
+
         .bd-placeholder-img {
             font-size: 1.125rem;
             text-anchor: middle;
@@ -40,15 +40,15 @@
             -moz-user-select: none;
             user-select: none;
         }
-        
+
         @media (min-width: 768px) {
             .bd-placeholder-img-lg {
                 font-size: 3.5rem;
             }
         }
-        
+
         .form-control {
-            background-color: rgba(122, 167, 200, 0.1);
+            background-color: #7aa7c810;
             border: 1px solid #7aa7c842;
             box-sizing: border-box;
             border-radius: 0px;
@@ -77,21 +77,21 @@
                 <div class="col-lg-12">
 
 
-                    <h2 style="color: #003569; text-align: center;"><strong>Application Form</strong></h2>
-                    <p style="color:#6193C5; text-align: center;"><strong>Loan Application for Public Sector Customers on
-              IPPIS</strong></p>
+                    <h2 style="color: #003569; text-align: center;">Application Form</h2>
+                    <p style="color:#6193C5; text-align: center;">Loan Application for Public Sector Customers on
+                        IPPIS</p>
                     <p>
-                        <ul>
-                            <li>Maximum Loan amount - N100,000</li>
-                            <li>Maximum Tenor - 3 months </li>
-                            <li>Disbursement time - Instant</li>
-                        </ul>
-                        <p style="font-weight: bold;"> For this application, you will need</p>
-                        <ol>
-                            <li>Your IPPIS Number</li>
-                            <li> Your salary account number (where your salary is paid)</li>
-                            <li>To read, understand and accept the loan terms and conditions</li>
-                        </ol>
+                    <ul>
+                        <li>Maximum Loan amount - N100,000</li>
+                        <li>Maximum Tenor - 3 months </li>
+                        <li>Disbursement time - Instant</li>
+                    </ul>
+                    <p style="font-weight: bold;"> For this application, you will need</p>
+                    <ol>
+                        <li>Your IPPIS Number</li>
+                        <li> Your salary account number (where your salary is paid)</li>
+                        <li>To read, understand and accept the loan terms and conditions</li>
+                    </ol>
                     </p>
                 </div>
                 <!-- /.col-lg-4 -->
@@ -119,71 +119,105 @@
             <div class="col-lg-12">
 
                 <form class="needs-validation" novalidate>
-                    <div class="row g-3"><label for="mobilenumber" class="form-label"><strong>Mobile Number</strong></label>
+                    <div class="row g-3"><label for="mobilenumber" class="form-label">
+                            <h6>Mobile Number</h6>
+                        </label>
                         <div class="col-sm-2">
 
-                            <input type="tel" class="form-control" id="mobilenumber" placeholder="" value="+234" required disabled>
+                            <input type="tel" class="form-control" id="mobilenumber" placeholder="" value="+234"
+                                required disabled>
                             <div class="invalid-feedback">
 
                             </div>
                         </div>
 
                         <div class="col-sm-4">
-                            <input type="number" minlenght="10" maxlength="10" class="form-control" id="lastName" placeholder="Enter your Mobile Number" value="" required>
+                            <input type="number" minlenght="10" maxlength="10" class="form-control" id="lastName"
+                                placeholder="Enter your Mobile Number" value="" required>
                             <div class="invalid-feedback">
                                 Valid Phone Number is required.
                             </div>
                         </div>
+                        <div>
+
+                            <div class="col-lg-4">
+                                <label for="ippisnumber" class="form-label ">
+                                    <h6>IPPIS Number</h6>
+                                </label>
+                                <input type="number " class="form-control " id="ippisnumber"
+                                    placeholder="Enter your IPPIS number" required>
+                                <div class="invalid-feedback ">
+                                    Please enter a valid IPPIS Number.
+                                </div>
+                            </div>
+
+                        </div>
+
                         <h6 class="">Select Loan Amount</h6>
 
                         <div class="col-sm-5">
                             <div class="form-check form-control">
-                                <input id="thirtythousand" name="loanamount" type="radio" class="form-check-input " checked required>
+                                <input id="thirtythousand" name="loanamount" type="radio" class="form-check-input "
+                                    checked required>
                                 <label class="form-check-label" for="thirtythousand">N30,000</label>
                             </div>
                             <div class="form-check form-control">
-                                <input id="sixtythousand" name="loanamount" type="radio" class="form-check-input " required>
+                                <input id="sixtythousand" name="loanamount" type="radio" class="form-check-input "
+                                    required>
                                 <label class="form-check-label" for="sixtythousand">N60,000</label>
                             </div>
                             <div class="form-check form-control">
-                                <input id="onehundredthousand" name="loanamount" type="radio" class="form-check-input " required>
+                                <input id="onehundredthousand" name="loanamount" type="radio" class="form-check-input "
+                                    required>
                                 <label class="form-check-label" for="onehundredthousand">N100,000</label>
                             </div>
                         </div>
+
                         <div class="col-md-12">
 
-                            <label class="form-check-label" for="range">Duration</label>
+                            <label class="form-check-label" for="range">
+                                <h6>Duration</h6>
+                            </label>
                             <select class="form-select form-control" id="duration " required>
                                 <option value=" ">Select Duration</option>
                                 <option>1 Month</option>
                                 <option>2 Months</option>
                                 <option>3 Months</option>
-                                
-                              </select>
+
+                            </select>
                         </div>
                         <div class="col-12">
-                            <label for="monthlypayment " class="form-label ">Monthly Payment</label>
-                            <input type="number " class="form-control " id="monthlypayment " placeholder=" " value="N33,000 " disabled>
+                            <label for="monthlypayment " class="form-label ">
+                                <h6>Monthly Payment</h6>
+                            </label>
+                            <input type="number " class="form-control " id="monthlypayment " placeholder=" "
+                                value="N33,000 " disabled>
                             <div class="invalid-feedback ">
 
                             </div>
                         </div>
 
                         <div class="col-md-12 ">
-                            <label for="accountnumber" class="form-label ">Account Number</label>
-                            <input type="number " class="form-control " id="accountnumber" placeholder="Enter you salary account number where we will disburse your loan" required>
+                            <label for="accountnumber" class="form-label ">
+                                <h6>Account Number</h6>
+                            </label>
+                            <input type="number " class="form-control " id="accountnumber"
+                                placeholder="Enter your salary account number where we will disburse your loan"
+                                required>
                             <div class="invalid-feedback ">
-                                Please enter your Account Number.
+                                Please enter a valid Account Number.
                             </div>
                         </div>
 
                         <div class="col-md-12">
-                            <label for="bankname " class="form-label ">Bank Name</label>
+                            <label for="bankname " class="form-label ">
+                                <h6>Bank Name</h6>
+                            </label>
                             <select class="form-select form-control" id="bankname " required>
                                 <option value=" ">Select bank name</option>
                                 <option>Zenith Bank</option>
                                 <option>Access Bank</option>
-                                </select>
+                            </select>
                             <div class="invalid-feedback ">
                                 Please select a valid bankname.
                             </div>
@@ -191,7 +225,8 @@
 
                     </div>
                     <hr class="my-4 ">
-                    <button style="color: #FFFFFF;" class=" w-100 btn actionbutton btn-lg " type="submit ">Continue to checkout</button>
+                    <button style="color: #FFFFFF;" class=" w-100 btn actionbutton btn-lg " type="submit ">Continue to
+                        checkout</button>
                 </form>
             </div>
         </div>
