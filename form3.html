@@ -152,26 +152,22 @@
                             </div>
 
                         </div>
-
-                        <h6 class="">Select Loan Amount</h6>
-
-                        <div class="col-sm-5">
-                            <div class="form-check form-control">
-                                <input id="thirtythousand" name="loanamount" type="radio" class="form-check-input "
-                                    checked required>
-                                <label class="form-check-label" for="thirtythousand">N30,000</label>
-                            </div>
-                            <div class="form-check form-control">
-                                <input id="sixtythousand" name="loanamount" type="radio" class="form-check-input "
-                                    required>
-                                <label class="form-check-label" for="sixtythousand">N60,000</label>
-                            </div>
-                            <div class="form-check form-control">
-                                <input id="onehundredthousand" name="loanamount" type="radio" class="form-check-input "
-                                    required>
-                                <label class="form-check-label" for="onehundredthousand">N100,000</label>
+                        <div class="col-md-5">
+                            <label for="loanamount" class="form-label ">
+                                <h6>Eligible Loan Amount</h6>
+                            </label>
+                            <select class="form-select form-control" id="loanamount" required>
+                                <option value=" ">Select eligible loan amount</option>
+                                <option>N30,000</option>
+                                <option>N60,000</option>
+                                <option>N100,000</option>
+                            </select>
+                            <div class="invalid-feedback ">
+                            
                             </div>
                         </div>
+
+                       
 
                         <div class="col-md-12">
 
@@ -187,11 +183,11 @@
                             </select>
                         </div>
                         <div class="col-12">
-                            <label for="monthlypayment " class="form-label ">
-                                <h6>Monthly Payment</h6>
+                            <label for="monthlypayment" class="form-label ">
+                                <h6>Repayment Per Tenor</h6>
                             </label>
-                            <input type="number " class="form-control " id="monthlypayment " placeholder=" "
-                                value="N33,000 " disabled>
+                            <input type="text" class="form-control " id="monthlypayment " placeholder=" "
+                                value="N33,000 per month for 3 months" disabled>
                             <div class="invalid-feedback ">
 
                             </div>
