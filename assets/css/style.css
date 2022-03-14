@@ -1,13 +1,72 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
+
+@font-face {
+  font-family: "futura-book";
+  src: url("../fonts/futura-book.ttf") format("truetype");
+}
+@font-face {
+  font-family: "FutuBd";
+  src: url("../fonts/FutuBd.ttf") format("truetype");
+}
+@font-face {
+  font-family: "FutuBdIt";
+  src: url("../fonts/FutuBdIt.ttf") format("truetype");
+}
+@font-face {
+  font-family: "FutuMd";
+  src: url("../fonts/FutuMd.ttf") format("truetype");
+}
+@font-face {
+  font-family: "FutuMdIt";
+  src: url("../fonts/FutuMdIt.ttf") format("truetype");
+}
+@font-face {
+  font-family: "FUTURAB";
+  src: url("../fonts/FUTURAB.TTF") format("truetype");
+}
+@font-face {
+  font-family: "FuturaBoldBT";
+  src: url("../fonts/FuturaBoldBT.ttf") format("truetype");
+}
+@font-face {
+  font-family: "FuturaBoldItalicBT";
+  src: url("../fonts/FuturaBoldItalicBT.ttf") format("truetype");
+}
+@font-face {
+  font-family: "FuturaMediumBT";
+  src: url("../fonts/FuturaMediumBT.ttf") format("truetype");
+}
+@font-face {
+  font-family: "FuturaMediumItalicBT";
+  src: url("../fonts/FuturaMediumItalicBT.ttf") format("truetype");
+}
+
+/* * {
+  font-family: "Futura Std Book", "Futura Book", "Futura Round", "Futura Std Book",
+    "Futura Std Heavy", "Futura Thin";
+} */
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
 /* Padding below the footer and lighter body text */
 
 body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   color: #5a5a5a;
+  font-family: "futura-book ,FutuBd ,FutuBdIt ,FutuMd ,FutuMdIt ,FUTURAB ,FuturaBoldBT ,FuturaBoldItalicBT ,FuturaMediumBT ,FuturaMediumItalicBT";
+ 
 }
-
+h1,h2,h3,h4,h5,h6,a,button{
+  font-family: "FuturaBoldBT";
+  /* font-weight: 700; */
+}
+p,li{
+  font-family: "FutuMd";
+  /* font-weight: 700; */
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
