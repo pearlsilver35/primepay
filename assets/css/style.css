@@ -90,6 +90,17 @@ p,li,select,input {
     padding-top: 100px;
     text-align: center;
 }
+.slider{
+    font-family:"futura-book"!important ;
+    font-size: 90px !important;
+    
+    
+}
+.slider1{
+    font-family: "FUTURAB"!important;
+    font-size: 90px !important;
+    
+}
 
 
 /* CUSTOMIZE THE CAROUSEL
