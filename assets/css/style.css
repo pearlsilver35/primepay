@@ -85,6 +85,11 @@ p,li,select,input {
     font-family: "FutuMd";
 
 }
+.accepted{
+    font-size: larger;
+    padding-top: 100px;
+    text-align: center;
+}
 
 
 /* CUSTOMIZE THE CAROUSEL
