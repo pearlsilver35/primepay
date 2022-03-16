@@ -1,4 +1,4 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,6 +7,9 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and PrimePay contributors">
     <meta name="generator" content="Hugo 0.84.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>PrimePay v1.0</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
@@ -133,7 +136,7 @@
                 <form class="needs-validation" novalidate>
                     <div class="row g-3">
                         <label for="mobilenumber" class="form-label">
-                            <h6 class="mt-4" >Mobile Number</h6>
+                            <h6 class="mt-4">Mobile Number</h6>
                         </label>
                         <div class="col-sm-1">
 
@@ -151,35 +154,36 @@
                                 Valid Phone Number is required.
                             </div>
                         </div>
-                        <div>
+                        <div style="margin-left: -15px;">
+                            <div>
+                                <div class="col-lg-6">
+                                    <label for="availablelimit" class="form-label ">
+                                        <h6>Available Limit For Merchant Payment</h6>
+                                    </label>
+                                    <input type="number " class="form-control " id="availablelimit" placeholder=""
+                                        value="N100,000" disabled required>
+                                    <div class="invalid-feedback ">
 
-                            <div class="col-lg-6">
-                                <label for="availablelimit" class="form-label ">
-                                    <h6>Available Limit For Merchant Payment</h6>
-                                </label>
-                                <input type="number " class="form-control " id="availablelimit" placeholder=""
-                                    value="N100,000" disabled required>
-                                <div class="invalid-feedback ">
-
+                                    </div>
                                 </div>
+
                             </div>
 
-                        </div>
+                            <div>
+                                <div class="col-md-4">
 
-                        <div>
-                            <div class="col-md-4">
+                                    <label for="amounttopay" class="form-label ">
+                                        <h6>Amount To Pay Merchant</h6>
+                                    </label>
+                                    <input type="number" class="form-control " id="amounttopay"
+                                        placeholder="Enter amount to pay merchant" value="" required>
+                                    <div class="invalid-feedback ">
+                                        Enter Amount between N30,000 to N100,000
 
-                                <label for="amounttopay" class="form-label ">
-                                    <h6>Amount To Pay Merchant</h6>
-                                </label>
-                                <input type="number" class="form-control " id="amounttopay"
-                                    placeholder="Enter amount to pay merchant" value="" required>
-                                <div class="invalid-feedback ">
-                                    Enter Amount between N30,000 to N100,000
-
+                                    </div>
                                 </div>
-                            </div>
 
+                            </div>
                         </div>
 
 
@@ -189,12 +193,15 @@
                                 <h6>Duration</h6>
                             </label>
                             <select class="form-select form-control" id="duration " required>
-                                <option value=" ">Select Duration</option>
+                                <option value="">Select Duration</option>
                                 <option>1 Month</option>
                                 <option>2 Months</option>
                                 <option>3 Months</option>
 
                             </select>
+                            <div class="invalid-feedback ">
+                                Please Select duration
+                            </div>
                         </div>
                         <div class="col-12">
                             <label for="monthlypayment " class="form-label ">
@@ -224,7 +231,7 @@
                                 <h6>Bank Name</h6>
                             </label>
                             <select class="form-select form-control" id="bankname " required>
-                                <option value=" ">Select bank name</option>
+                                <option value="">Select bank name</option>
                                 <option>Zenith Bank</option>
                                 <option>Access Bank</option>
                             </select>
@@ -234,9 +241,38 @@
                         </div>
 
                     </div>
-                    
-                    <button style="color: #FFFFFF;" class=" w-100 btn actionbutton btn-lg " type="submit ">Continue</button>
+
+                    <button data-toggle="modal" data-target="#exampleModalCenter" style="color: #FFFFFF;"
+                        class=" w-100 btn actionbutton btn-lg " type="submit ">Continue</button>
                 </form>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content rounded-9">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <img width="55%" height="auto" src="assets/images/successemoji.png" alt="">
+                        </div>
+                        <div>
+                            <p style="padding: 25px 0px; font-size: larger;">Congrats, you have <br>approved loan limits
+                            </p>
+                        </div>
+
+                        <div style="margin-bottom: 70px;">
+                            <a href="merchantloansuccess.html"><button type="button"
+                                    class="sliderbutton btn btn-primary">Continue</button></a>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
         <!-- FOOTER -->
@@ -249,6 +285,15 @@
 
     <script src="assets/bootstrap-5.0.2/dist/js/bootstrap.bundle.min.js "></script>
     <script src="assets/js/form-validation.js "></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
