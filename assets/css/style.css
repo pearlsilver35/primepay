@@ -92,14 +92,17 @@ p,li,select,input {
 }
 .slider{
     font-family:"futura-book"!important ;
-    font-size: 90px !important;
+    font-size: 60px !important;
     
     
 }
 .slider1{
     font-family: "FUTURAB"!important;
-    font-size: 90px !important;
+    font-size: 60px !important;
     
+}
+.appform{
+    padding-left: 100px;
 }
 
 
