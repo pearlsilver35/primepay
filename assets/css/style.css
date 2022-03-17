@@ -269,6 +269,7 @@ p,li,select,input {
     padding: 10px 0px 10px 0px;
     background-color: #003569 !important;
     width: 100%;
+    margin: 0px;
 }
 
 .bg-light {
@@ -290,10 +291,6 @@ p,li,select,input {
 }
 
 
-/* .bannersection{
-  background-image: url('../images/banner.png');
-  height: 400px;
-} */
 
 @media only screen and (max-width: 600px) {
     .balancebutton {
@@ -303,5 +300,32 @@ p,li,select,input {
         border-color: #003569;
         background: #003569;
         border-radius: 60px;
+        font-size: 15px;
     }
+    .carousel-caption > p {
+        font-size: 20px !important;
+    }
+    .slider .slider1 {
+        font-size: 30px !important;
+    }
+}
+
+.form-control.form-check {
+    padding-left: 50px;
+    margin: 9px 0px;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    width: 80%;
+    padding: auto;
+    margin: 5%;
+}
+
+.form-control {
+    background-color: #7aa7c810;
+    border: 1px solid #7aa7c842;
+    box-sizing: border-box;
+    border-radius: 0px;
 }
