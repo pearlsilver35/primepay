@@ -329,3 +329,32 @@ p,li,select,input {
     box-sizing: border-box;
     border-radius: 0px;
 }
+
+.box1 {
+    padding: 80px;
+    background-color: #FCFCFC;
+
+}
+
+.sidelogo {
+    position: relative;
+    background-color: #003569;
+}
+
+@media only screen and (max-width: 600px) {
+    .box1 {
+        padding: 10%;
+        background-color: #FCFCFC;
+
+    }
+
+    .sidelogo {
+        visibility: hidden;
+    }
+
+    .container {
+        align-items: center;
+        display: flex;
+        width: 100%;
+    }
+}
