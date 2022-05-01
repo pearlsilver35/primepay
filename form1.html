@@ -19,65 +19,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <style>
-        body {
-            padding: 0px !important;
-        }
-
-        .container {
-            justify-content: center;
-        }
-
-        ul li {
-            background-color: #F4F4F4;
-            margin: 1px -30px;
-            border-left: 7px solid #A6C6E7;
-            padding: 7px;
-            list-style: none;
-        }
-
-        ul li:first-child {
-            border-left: 7px solid #A6C6E7;
-        }
-
-        ul li:nth-child(2) {
-            border-left: 7px solid #6193C5;
-        }
-
-        ul li:nth-child(3) {
-            border-left: 7px solid #003569;
-        }
-
-        ol {
-            counter-reset: list;
-        }
-
-        ol>li {
-            list-style: none;
-        }
-
-        ol>li:before {
-            content: counter(list, number) ") ";
-            counter-increment: list;
-        }
-
-        li {
-            margin: 0 -30px;
-        }
-    </style>
-
 
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="nopad">
 
     <main>
 
 
 
-        <div class="container">
+        <div class="jcc container">
 
             <!-- Three columns of text below the carousel -->
             <div style="margin-bottom: -150px; display:flex; justify-content: center;" class="row">
@@ -107,11 +60,7 @@
 
                 </div>
                 <div class="sidelogo col-md-2">
-                    <img style="position: absolute;
-                    top: 0;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;margin: auto;" width="70%" height="auto" src="assets/images/logo-inner.png" />
+                    <img class="sidelogoimg" width="70%" height="auto" src="assets/images/logo-inner.png" />
 
                 </div>
                 <!-- /.col-lg-4 -->
@@ -142,13 +91,14 @@
                             <img width="55%" height="auto" src="assets/images/successemoji.png" alt="">
                         </div>
                         <div>
-                            <p style="padding: 25px 0px; font-size: larger;">Congrats, you have <br>approved loan limits
+                            <p style="padding: 5px 0px; font-size:medium;">By clicking proceed, I consent to PrimePay obtaining <br>information from relevant third parties as may be necessary,<br> on my employment details, salary payment, loans and other<br> related data, to make a decision on my loan application. I <br>consent to the privacy policy of PrimePay and I authorize the <br>company to make any enquiries considered necessary and <br>
+                                appropriate for the purpose of evaluating this application.<br> I also confirm that I have obtained the consent of the third-<br>parties whose data is required to approve my transaction
                             </p>
                         </div>
 
                         <div style="margin-bottom: 70px;">
-                            <button onclick="window.location.href='Loansuccess.html'" type="button"
-                                class="sliderbutton btn btn-primary">Continue</button>
+                            <button onclick="window.location.href='form11.html'" type="button"
+                                class="sliderbutton btn btn-primary">Proceed</button>
                         </div>
                     </div>
 
