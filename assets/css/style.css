@@ -96,6 +96,12 @@ input {
   padding-top: 100px;
   text-align: center;
 }
+.OTP {
+    font-size:smaller;
+    padding-top: 100px;
+    padding-bottom:30px;
+    text-align: center;
+  }
 .slider {
   font-family: "futura-book" !important ;
   font-size: 60px !important;
@@ -321,6 +327,11 @@ input {
   padding: 80px;
   background-color: #fcfcfc;
 }
+
+.boxloan-success {
+    padding: 150px;
+    background-color: #fcfcfc;
+  }
 
 .sidelogo {
   position: relative;
