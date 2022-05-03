@@ -33,10 +33,33 @@
                 <div class="box1 col-md-10">
                     <form class="needs-validation" novalidate>
                         <div class="row g-3">
+                            <div class="col-lg-12">
+
+                                <label class="form-check-label" for="">
+                                    <h6>Merchant</h6>
+                                </label>
+                                <select class="form-select form-control" id="choosemerchant" required>
+                                    <option value=" ">Select merchant</option>
+                                    <option>Jumia</option>
+                                    <option>Konga</option>
+                                    <option>Amazon</option>
+            
+                                </select>
+                            </div>
+                            <label id="mob" for="mobilenumber" class="form-label">
+                                <h6>Name</h6>
+                            </label>
+                            <div class="col-12">
+                                <input style="margin-bottom: 10px;" type="text" class="form-control" id="mobilenumber" placeholder="Enter your first name" value=""
+                                    required/>
+                                    <input type="text" class="form-control" id="mobilenumber" placeholder="Enter your surname" value=""
+                                    required/>
+                                <div class="invalid-feedback"></div>
+                            </div>
                             <label id="mob" for="mobilenumber" class="form-label">
                                 <h6>Mobile Number</h6>
                             </label>
-                            <div class="col-sm-2">
+                            <div class="col-sm-4">
                                 <input type="tel" class="form-control" id="mobilenumber" placeholder="" value="+234"
                                     required disabled />
                                 <div class="invalid-feedback"></div>
@@ -49,84 +72,18 @@
                                     Valid Phone Number is required.
                                 </div>
                             </div>
-                            <!-- <div>
-                                <div class="col-lg-4">
-                                    <label for="ippisnumber" class="form-label">
-                                        <h6>IPPIS Number</h6>
-                                    </label>
-                                    <input type="number " class="form-control" id="ippisnumber"
-                                        placeholder="Enter your IPPIS number" required />
-                                    <div class="invalid-feedback">
-                                        Please enter a valid IPPIS Number.
-                                    </div>
-                                </div>
-                            </div> -->
 
-                            <h6 id="mob" class="">Select Loan Amount</h6>
-
-                            <div class="col-sm-6">
-                                <div class="form-check form-control">
-                                    <input id="thirtythousand" name="loanamount" type="radio" class="form-check-input"
-                                        checked required />
-                                    <label class="form-check-label" for="thirtythousand">N30,000</label>
-                                </div>
-                                <div class="form-check form-control">
-                                    <input id="sixtythousand" name="loanamount" type="radio" class="form-check-input"
-                                        required />
-                                    <label class="form-check-label" for="sixtythousand">N60,000</label>
-                                </div>
-                                <div class="form-check form-control">
-                                    <input id="onehundredthousand" name="loanamount" type="radio"
-                                        class="form-check-input" required />
-                                    <label class="form-check-label" for="onehundredthousand">N100,000</label>
-                                </div>
-                            </div>
-
-                            <div class="col-md-12">
-                                <label class="form-check-label" for="range">
-                                    <h6>Duration</h6>
-                                </label>
-                                <select class="form-select form-control" id="duration " required>
-                                    <option value=" ">Select Duration</option>
-                                    <option>1 Month</option>
-                                    <option>2 Months</option>
-                                    <option>3 Months</option>
-                                </select>
-                            </div>
                             <div class="col-12">
                                 <label for="monthlypayment " class="form-label">
-                                    <h6>Monthly Payment</h6>
+                                    <h6>IPPIS Number</h6>
                                 </label>
-                                <input type="number " class="form-control" id="monthlypayment " placeholder=" "
-                                    value="N33,000 " disabled />
-                                <div class="invalid-feedback"></div>
-                            </div>
-
-                            <div class="col-md-12">
-                                <label for="accountnumber" class="form-label">
-                                    <h6>Account Number</h6>
-                                </label>
-                                <input type="number " class="form-control" id="accountnumber"
-                                    placeholder="Enter your salary account number where we will disburse your loan"
-                                    required />
+                                <input type="number " class="form-control" id="monthlypayment " placeholder="Enter your IPPIS number"
+                                    value="" required/>
                                 <div class="invalid-feedback">
-                                    Please enter a valid Account Number.
+                                    Enter valid IPPIS Number.
                                 </div>
                             </div>
-
-                            <div class="col-md-12">
-                                <label for="bankname " class="form-label">
-                                    <h6>Bank Name</h6>
-                                </label>
-                                <select class="form-select form-control" id="bankname " required>
-                                    <option value=" ">Select bank name</option>
-                                    <option>Zenith Bank</option>
-                                    <option>Access Bank</option>
-                                </select>
-                                <div class="invalid-feedback">
-                                    Please select a valid bankname.
-                                </div>
-                            </div>
+                        
                         </div>
 
                         <button data-toggle="modal" data-target="#exampleModalCenter" style="color: #ffffff"
