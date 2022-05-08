@@ -163,32 +163,40 @@
 
         <!-- Modal -->
         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content rounded-9">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content rounded-9">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                   
+                    <div>
+                        <p style="padding: 25px 0px; font-size: larger">
+                            You are requesting for a loan of Nxxxxxx for 3 months. monthly repayment will be Nxxxxxxx and will be deducted at source commencing from your next salary. Please input IPPIS number to accept.
+                        </p>
+                        <p style="padding: 25px 0px; font-size: small">
+                            By inputting my IPPIS number, I accept the terms and conditions of the loan consent to the loan amounts being deducted by PrimePay from my salary at source through my IPPIS number before credit to my account and any outstanding loans being recovered automatically from any other accounts linked to me in the case of default.</p>
+                    </div>
+                    <form class="needs-validation" novalidate>
+                        <div class="row m-3">
+                            <input class="form-control" type="number"
+                                placeholder="Enter your IPPIS number">
+                        </div>
+                    </form>
+
+                    <div style="margin-bottom: 70px">
+                        <button onclick="window.location.href='form-Referalmerchant.html'" type="button"
+                            class="sliderbutton btn btn-primary">
+                           Proceed
                         </button>
                     </div>
-                    <div class="modal-body">
-                        <div>
-                            <img width="55%" height="auto" src="assets/images/successemoji.png" alt="">
-                        </div>
-                        <div>
-                            <p style="padding: 25px 0px; font-size: larger;">Congrats, you have <br>approved loan limits
-                            </p>
-                        </div>
-
-                        <div style="margin-bottom: 70px;">
-                            <button onclick="window.location.href='Loansuccess.html'" type="button"
-                                class="sliderbutton btn btn-primary">Continue</button>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
+    </div>
         <!-- FOOTER -->
         <footer style="margin-top: 100px; " class="container ">
             <!-- <p class="float-end "><a href="# ">Back to top</a></p> -->
